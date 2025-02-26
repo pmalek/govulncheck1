@@ -58,8 +58,8 @@ jobs:
       uses: github/codeql-action/upload-sarif@b56ba49b26e50535fa1e7f7db0f4f7b4bf65d80d # v3.28.10
       with:
         # Path to SARIF file relative to the root of the repository
-        sarif_file: results.sarif
+        sarif_file: results_${{ steps.filename.result }}.sarif
         # Optional category for the results
         # Used to differentiate multiple results for one commit
-        category: my-analysis-tool
+        category: govulncheck
 
