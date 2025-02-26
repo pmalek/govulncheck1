@@ -13,8 +13,8 @@ on:
       - release/1.4.x
     tags:
       - '*'
-  schedule:
-    - cron: '42 1 * * *'
+  # schedule:
+  #    - cron: '42 1 * * *'
   workflow_dispatch: {}
 
 permissions:
